@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>甲壳虫3</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        div.pic {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -342px;
+            margin-top: -226px;
+            width: 684px;
+            height: 452px;
+            background-image: url("img/pic03.jpg");
+        }
+
+        div.button {
+            position: relative;
+            left: 85%;
+            top: 85%;
+        }
+    </style>
+    <script src="audiojs/audio.min.js "></script>
+    <script>
+        audiojs.events.ready(function () {
+            var as = audiojs.createAll();
+        });
+    </script>
+</head>
+<body>
+<div class="pic">
+    <div class="button">
+        <a href="index.html"><img src="img/button-return.jpg"></a>
+    </div>
+    <h1>player audio</h1>
+
+    <p>Load from remote URL</p>
+    <audio preload="auto">
+        <source src="Audio/test01.mp3">
+    </audio>
+</div>
+</body>
+</html>
