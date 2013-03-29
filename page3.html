@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>甲壳虫03</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="main.js"></script>
+</head>
+<body>
+<style>
+    .background {
+        width: 629px;
+        height: 396px;
+        background-image: url("img/pic3-0.png");
+    }
+
+    .button {
+        position: relative;
+        left: 555px;
+        top: 315px;
+    }
+
+    .music {
+        position: absolute;
+        left: 95px;
+        top: 240px;
+    }
+
+    .pic1 {
+        position: absolute;
+        left: 110px;
+        top: 25px;
+    }
+
+    .pic2 {
+        position: absolute;
+        left: 90px;
+        top: 240px;
+    }
+</style>
+<div class="background">
+    <div class="music">
+        <img onclick="play(sName);" src="img/pic3-2.png "/>
+    </div>
+    <div class="pic1">
+        <img id="picture" onclick="play(sName);"  src="img/FeelGoodInc.jpg"/>
+    </div>
+    <div class="pic2">
+        <img id="picture2" onclick="stop(sName);"  src="img/Gorillaz.jpg "/>
+    </div>
+    <div class="button">
+
+        <a href="index.html"><img onclick="testFun(sName);"  src="img/pic3-1.png"></a>
+    </div>
+    <script>
+        //document.getElementById("sName").innerHTML= sName+"sName";
+        //console.log("")
+    </script>
+    <div id="sName"></div>
+</div>
+</body>
+</html>
